@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainPageActivity">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="320dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="216dp"
+            android:background="@color/white"
+            android:fontFamily="@font/akaya_telivigala"
+            android:gravity="center"
+            android:text="Tip of the day!!"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.395"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="403dp"
+            android:layout_height="277dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="299dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065"
+            app:srcCompat="@drawable/whatsapp_image_2023_03_03_at_9_07_22_pm" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="672dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="551dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/division1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="335dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="530dp"
+            android:background="@drawable/input_bg"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Q and A Section"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.632"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="305dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="601dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/input_bg"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Insipiration Looks"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.407" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="375dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="610dp"
+            android:text="Find Your Style!!"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

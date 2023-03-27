@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "487987657473",
+    "project_id": "virtual-fashion-stylist",
+    "storage_bucket": "virtual-fashion-stylist.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487987657473:android:1c604ada3e9d431becb900",
+        "android_client_info": {
+          "package_name": "com.example.virtual_fashion_stylist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487987657473-fdumgnq64c3i7k3kvtrtl22ei23ac5ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCSZ5kTqUb1jRDsKDgUkf5QNOaSU2F5iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487987657473-fdumgnq64c3i7k3kvtrtl22ei23ac5ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
