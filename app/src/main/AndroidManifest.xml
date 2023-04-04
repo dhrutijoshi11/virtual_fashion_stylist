@@ -12,6 +12,27 @@
         android:theme="@style/Theme.Virtual_Fashion_Stylist"
         tools:targetApi="31">
         <activity
+            android:name=".TrendyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreativeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SexyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RomanticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElegantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClassicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CasualActivity"
+            android:exported="false" />
+        <activity
             android:name=".InspirationLook"
             android:exported="false" />
         <activity
