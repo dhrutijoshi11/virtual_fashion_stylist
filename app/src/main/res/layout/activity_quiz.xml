@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".QandActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        app:menu="@menu/toolbar"
+        app:navigationIcon="@drawable/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VFS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"></TextView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/back"
+        tools:context=".QandActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Lets find out about Your style"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="176dp"
+                    tools:layout_editor_absoluteY="54dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:backgroundTint="@color/gray"
+                    android:text="What is your body type?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/hourGlass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/hourGlass_image"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/hourglass" />
+
+
+                    <RadioButton
+                        android:id="@+id/rectangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/rectangle_image"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/rectangle" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/pear_image"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/pear" />
+
+                    <RadioButton
+                        android:id="@+id/invertedTriangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/invertedTriangle_image"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/invertedtriangle" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/apple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/apple_image"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/apple" />
+                </GridLayout>
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input_bg"
+                    android:backgroundTint="@color/gray"
+                    android:text="What is you skin color?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="361dp" />
+
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/light_image"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/light" />
+
+
+                    <RadioButton
+                        android:id="@+id/normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/normal_image"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/normal" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/tan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/tan_image"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/tan" />
+
+                    <RadioButton
+                        android:id="@+id/brown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/brown_image"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/brown" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/veryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/verydark_image"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/verydark" />
+                </GridLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input_bg"
+                    android:backgroundTint="@color/gray"
+                    android:text="What kind of style do you prefer?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="673dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton14"
+                    android:layout_width="110dp"
+                    android:layout_height="44dp"
+                    android:text="Comfy"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="709dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton15"
+                    android:layout_width="118dp"
+                    android:layout_height="48dp"
+                    android:text="Classic"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="709dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton16"
+                    android:layout_width="117dp"
+                    android:layout_height="55dp"
+                    android:text="Elegant"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="709dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton17"
+                    android:layout_width="120dp"
+                    android:layout_height="44dp"
+                    android:text="Romantic"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="709dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton18"
+                    android:layout_width="120dp"
+                    android:layout_height="49dp"
+                    android:text="Creative"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="709dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton19"
+                    android:layout_width="120dp"
+                    android:layout_height="53dp"
+                    android:text="Trendy"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="709dp" />
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Don't know your style? No worries, take a quiz and find out!!"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="673dp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="246dp"
+                    android:layout_height="67dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Know your style!!!" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input_bg"
+                    android:backgroundTint="@color/gray"
+                    android:text="How do you typically like to accessorize your outfits?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="673dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton20"
+                    android:layout_width="136dp"
+                    android:layout_height="47dp"
+                    android:text="Very less"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="709dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton21"
+                    android:layout_width="136dp"
+                    android:layout_height="48dp"
+                    android:text="Moderate"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="709dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton22"
+                    android:layout_width="196dp"
+                    android:layout_height="51dp"
+                    android:text="Love to accessorize!!"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="709dp" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input_bg"
+                    android:backgroundTint="@color/gray"
+                    android:text=" What is your Go to outift? (Just curious to know)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="673dp" />
+
+                <EditText
+                    android:id="@+id/edittext_input"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/button_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittext_input"
+                    android:layout_marginLeft="97dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Its time to Find out !!"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

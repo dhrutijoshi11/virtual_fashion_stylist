@@ -9,7 +9,9 @@
         android:id="@+id/viewPagerImageslider"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingStart= "80dp"
-        android:paddingEnd="80dp"/>
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

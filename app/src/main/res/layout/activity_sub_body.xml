@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubBodyActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        app:menu="@menu/toolbar"
+        app:navigationIcon="@drawable/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VFS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"></TextView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imageSlide"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:iss_auto_cycle="true"
+        app:iss_corner_radius="10"
+        app:iss_delay="1000"
+        app:iss_period="1000"
+        app:iss_title_background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar"
+        tools:layout_editor_absoluteX="6dp" >
+
+    </com.denzcoskun.imageslider.ImageSlider>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
