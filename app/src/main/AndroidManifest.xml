@@ -2,15 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/bg1"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Virtual_Fashion_Stylist"
         tools:targetApi="31">
+        <activity
+            android:name=".SubBodyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SkinColorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BodyTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QandActivity"
+            android:exported="false" />
         <activity
             android:name=".InspirationLook"
             android:exported="false" />

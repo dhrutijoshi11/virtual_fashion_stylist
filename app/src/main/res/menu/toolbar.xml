@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/notification"
+        android:title="Fav"
+        app:showAsAction="ifRoom" />
+
+
     <item
         android:id="@+id/favorites"
         android:icon="@drawable/fav"
-        android:title="Setting"
+        android:title="Fav"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/setting"
+        android:id="@+id/user"
         android:icon="@drawable/user"
-        android:title="Setting"
+        android:title="user"
         app:showAsAction="ifRoom" />
 
 </menu>
