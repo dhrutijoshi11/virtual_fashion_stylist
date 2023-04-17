@@ -8,7 +8,6 @@
         android:title="Fav"
         app:showAsAction="ifRoom" />
 
-
     <item
         android:id="@+id/favorites"
         android:icon="@drawable/fav"
