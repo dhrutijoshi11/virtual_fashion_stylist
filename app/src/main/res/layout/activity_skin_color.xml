@@ -84,9 +84,9 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/light"
+                        android:id="@+id/btnLight"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="43dp"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="85dp"
                         android:background="@android:color/transparent"
@@ -106,7 +106,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/normal"
+                        android:id="@+id/btnNormal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
@@ -129,7 +129,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/tan"
+                        android:id="@+id/btnTan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
@@ -153,7 +153,7 @@
 
 
                     <RadioButton
-                        android:id="@+id/brown"
+                        android:id="@+id/btnBrown"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
@@ -176,7 +176,7 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/veryDark"
+                        android:id="@+id/btnDark"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
@@ -193,7 +193,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/button_submit"
+                    android:id="@+id/btnSubmit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/edittext_input"

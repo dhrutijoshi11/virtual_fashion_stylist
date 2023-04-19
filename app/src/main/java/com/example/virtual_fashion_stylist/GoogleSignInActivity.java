@@ -5,7 +5,6 @@ import static android.content.ContentValues.TAG;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -55,19 +54,27 @@ public class GoogleSignInActivity extends MainActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == RC_SIGN_IN) {
-            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
-                try {
-                    GoogleSignInAccount account = task.getResult(ApiException.class);
-
-                    firebaseAuthWithGoogle(account.getIdToken());
-                } catch (ApiException e) {
-
-                    Toast.makeText(this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
-                    progressDialog.dismiss();
-                    finish();
-                }
+            if (data == null) {
+                // Handle the error
+                return;
+            }
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data)
+                    .addOnCompleteListener(this, new OnCompleteListener<GoogleSignInAccount>() {
+                        @Override
+                        public void onComplete(@NonNull Task<GoogleSignInAccount> task) {
+                            try {
+                                GoogleSignInAccount account = task.getResult(ApiException.class);
+                                firebaseAuthWithGoogle(account.getIdToken());
+                            } catch (ApiException e) {
+                                Toast.makeText(GoogleSignInActivity.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
+                                progressDialog.dismiss();
+                                finish();
+                            }
+                        }
+                    });
         }
     }
+
     private void firebaseAuthWithGoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         mAuth.signInWithCredential(credential)
@@ -82,6 +89,7 @@ public class GoogleSignInActivity extends MainActivity {
                             progressDialog.dismiss();
                             Toast.makeText(GoogleSignInActivity.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
                             finish();
+
                         }
                     }
                 });

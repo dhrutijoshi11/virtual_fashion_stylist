@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HourglassActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        app:menu="@menu/toolbar"
+        app:navigationIcon="@drawable/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VFS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"></TextView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which styles of bottoms do you think would complement an hourglass body shape?"
+                    android:textAlignment="center"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trousers"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trousers for the hourglass body shape should be in balance with the rest of the body and outfit. Always coordinate trousers with the top you're wearing."
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/h13" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:text="A selection of flattering trouser styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/h14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jeans"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Just like trousers, jeans should be balanced with the upper part of your outfit. Jeans should be mid- or high rise to elongate the legs. Wide waist bands are great."
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/h15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:text="A selection of flattering jean styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/h16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skirts"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The right skirt for the hourglass body shape accentuates the waist without adding too much bulk at the bottom."
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/h17" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:text="A selection of flattering skirt styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/h18" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shorts"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shorts for the hourglass body shape must not unbalance the naturally balanced figure. To make the waist appear smaller, opt for high-waisted shorts with contoured waistbands."
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/h19" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:text="A selection of flattering short styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/h20" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

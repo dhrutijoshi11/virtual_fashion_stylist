@@ -50,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
         alreadyAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this, RegisterActivity.class));
+                startActivity(new Intent(RegisterActivity.this, MainActivity.class));
             }
         });
 

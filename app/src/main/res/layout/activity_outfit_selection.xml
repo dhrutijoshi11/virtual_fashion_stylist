@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        app:menu="@menu/toolbar"
+        app:navigationIcon="@drawable/menu">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VFS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"></TextView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/toolBar"
+        android:text="Select the event which you want to dress up!!"
+        android:textSize="40dp"
+        android:textAlignment="center"/>
+
+    <RadioGroup
+        android:id="@+id/eventRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:id="@+id/radioWedding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wedding"
+            android:textSize="40sp"/>
+
+        <RadioButton
+            android:id="@+id/radioParty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Party"
+            android:textSize="40sp"/>
+
+        <RadioButton
+            android:id="@+id/radioCasual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casual"
+            android:textSize="40sp"/>
+
+        <RadioButton
+            android:id="@+id/radioFormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formal"
+            android:textSize="40sp"/>
+
+        <RadioButton
+            android:id="@+id/radioBusiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business"
+            android:textSize="40sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@+id/eventRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

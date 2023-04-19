@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backqna"
     tools:context=".MainPageActivity">
-
 
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -31,6 +30,8 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
@@ -48,6 +49,13 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
     <com.denzcoskun.imageslider.ImageSlider
         android:id="@+id/imageSlide"
@@ -57,59 +65,80 @@
         app:iss_corner_radius="10"
         app:iss_delay="1000"
         app:iss_period="1000"
-        app:iss_title_background="@color/grey"
-        app:layout_constraintTop_toBottomOf="@+id/toolBar"
+        app:iss_title_background="@color/gray"
         tools:layout_editor_absoluteX="6dp" >
 
     </com.denzcoskun.imageslider.ImageSlider>
 
-    <Button
-        android:id="@+id/btnQandA"
-        android:layout_width="384dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/input_bg"
-        android:fontFamily="@font/akaya_telivigala"
-        android:text="Q and A Section"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageSlide" />
 
-    <Button
-        android:id="@+id/btnInspirationLook"
-        android:layout_width="379dp"
-        android:layout_height="76dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/input_bg"
-        android:fontFamily="@font/akaya_telivigala"
-        android:text="Insipiration Looks"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnQandA"
-        app:layout_constraintVertical_bias="0.178" />
+            <ImageView
+                android:id="@+id/qnaImageView"
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:background="@drawable/qna"
+                android:text="Button 1"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/imageSlide"
+                android:textSize="10sp" />
 
-    <Button
-        android:id="@+id/btnOutfitSelection"
-        android:layout_width="379dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="88dp"
-        android:background="@drawable/input_bg"
-        android:fontFamily="@font/akaya_telivigala"
-        android:text="Outfit Selections"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnQandA"
-        app:layout_constraintVertical_bias="0.428"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="18dp" />
+            <Button
+                android:id="@+id/btnQandA"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/qnaImageView"
+                android:background="@drawable/image2"
+                android:text="Q and A Stylist"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/inspoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_below="@+id/btnQandA"
+                android:background="@drawable/image1"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <!-- Big Button 3 -->
+            <Button
+                android:id="@+id/btnInspirationLook"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/inspoBtn"
+                android:text="Lets gets some Inspiration!!"
+                android:background="@drawable/image2"
+                android:textStyle="italic"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/eventimg"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_below="@+id/btnInspirationLook"
+                android:background="@drawable/eventimg"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnOutfit"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/eventimg"
+                android:text="Outfits based on event!!"
+                android:background="@drawable/image2"
+                android:textStyle="italic"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
