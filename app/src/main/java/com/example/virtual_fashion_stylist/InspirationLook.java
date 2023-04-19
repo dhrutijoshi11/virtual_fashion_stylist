@@ -15,6 +15,8 @@ public class InspirationLook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inspiration_look);
 
+
+
         button1 = findViewById(R.id.button4);
         button2 = findViewById(R.id.button5);
         button3 = findViewById(R.id.button6);
