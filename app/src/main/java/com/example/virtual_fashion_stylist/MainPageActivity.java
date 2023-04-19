@@ -1,27 +1,39 @@
 package com.example.virtual_fashion_stylist;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager2.widget.ViewPager2;
-
 import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.Button;
 
-import com.denzcoskun.imageslider.ImageSlider;
-import com.denzcoskun.imageslider.constants.ScaleTypes;
-import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.virtual_fashion_stylist.InspirationLook;
+import com.example.virtual_fashion_stylist.QandActivity;
+
+
+        import androidx.appcompat.app.AppCompatActivity;
+        import androidx.viewpager2.widget.ViewPager2;
+
+        import android.content.ClipData;
+        import android.content.Intent;
+        import android.os.Bundle;
+        import android.util.Log;
+        import android.view.Menu;
+        import android.view.MenuInflater;
+        import android.view.MenuItem;
+        import android.view.View;
+        import android.view.WindowManager;
+        import android.widget.Button;
+        import androidx.appcompat.widget.Toolbar;
+
+        import com.denzcoskun.imageslider.ImageSlider;
+        import com.denzcoskun.imageslider.constants.ScaleTypes;
+        import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.virtual_fashion_stylist.R;
 
 import java.util.ArrayList;
-import java.util.List;
+        import java.util.List;
 
 public class MainPageActivity extends AppCompatActivity {
 
     Button button3;
     private ImageSlider imageSlider;
+    Button btnInspirationLook, btnQandA;
 
-    Button btnInspirationLook, btnQandA, btnOutfit ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +42,6 @@ public class MainPageActivity extends AppCompatActivity {
         imageSlider=findViewById(R.id.imageSlide);
         btnInspirationLook=findViewById(R.id.btnInspirationLook);
         btnQandA=findViewById(R.id.btnQandA);
-        btnOutfit = findViewById(R.id.btnOutfit);
 
 
 
@@ -42,7 +53,8 @@ public class MainPageActivity extends AppCompatActivity {
         slideModels.add(new SlideModel ( R.drawable.img5, ScaleTypes.FIT));
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 
-
+        Toolbar toolbar= findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
 
         btnInspirationLook.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,11 +70,5 @@ public class MainPageActivity extends AppCompatActivity {
             }
         });
 
-        btnOutfit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainPageActivity.this, OutfitSelectionActivity.class));
-            }
-        });
     }
 }
