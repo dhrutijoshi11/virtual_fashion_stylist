@@ -45,6 +45,8 @@ public class RegisterActivity extends AppCompatActivity {
         mUser=mAuth.getCurrentUser();
 
 
+
+
         alreadyAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
