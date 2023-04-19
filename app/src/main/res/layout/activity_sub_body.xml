@@ -10,8 +10,8 @@
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/gray"
-        android:backgroundTint="@color/gray"
+        android:background="@color/grey"
+        android:backgroundTint="@color/grey"
         app:menu="@menu/toolbar"
         app:navigationIcon="@drawable/menu"
         tools:ignore="MissingConstraints"
@@ -37,7 +37,7 @@
         app:iss_corner_radius="10"
         app:iss_delay="1000"
         app:iss_period="1000"
-        app:iss_title_background="@color/gray"
+        app:iss_title_background="@color/grey"
         app:layout_constraintTop_toBottomOf="@+id/toolBar"
         tools:layout_editor_absoluteX="6dp" >
 
