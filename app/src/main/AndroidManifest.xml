@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -14,30 +13,84 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Virtual_Fashion_Stylist"
         tools:targetApi="31">
-        <activity android:name=".QandActivity"
-            android:exported="false"/>
-        <activity android:name=".BodyTypeActivity"
-            android:exported="false"/>
-        <activity android:name=".SubBodyActivity"
-            android:exported="false"/>
-        <activity android:name=".SkinColorActivity"
-            android:exported="false"/>
-        <activity android:name=".CasualActivity"
-            android:exported="false"/>
-        <activity android:name=".ClassicActivity"
-            android:exported="false"/>
-        <activity android:name=".CreativeActivity"
-            android:exported="false"/>
-        <activity android:name=".ElegantActivity"
-            android:exported="false"/>
-        <activity android:name=".QuizActivity"
-            android:exported="false"/>
-        <activity android:name=".RomanticActivity"
-            android:exported="false"/>
-        <activity android:name=".SexyActivity"
-            android:exported="false"/>
-        <activity android:name=".TrendyActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".OutfitSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DarkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NormalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InvTriangleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RectangleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BottomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HourglassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BodyTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubBodyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SkinColorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CasualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClassicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreativeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElegantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RomanticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SexyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrendyActivity"
+            android:exported="false" />
         <activity
             android:name=".InspirationLook"
             android:exported="false" />
@@ -57,10 +110,6 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".Profile"
-            android:label="profile"/>
-
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -76,3 +125,4 @@
     </application>
 
 </manifest>
+
