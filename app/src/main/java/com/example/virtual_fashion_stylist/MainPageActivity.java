@@ -21,7 +21,7 @@ public class MainPageActivity extends AppCompatActivity {
     Button button3;
     private ImageSlider imageSlider;
 
-    Button btnInspirationLook, btnQandA;
+    Button btnInspirationLook, btnQandA, btnOutfit ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +30,7 @@ public class MainPageActivity extends AppCompatActivity {
         imageSlider=findViewById(R.id.imageSlide);
         btnInspirationLook=findViewById(R.id.btnInspirationLook);
         btnQandA=findViewById(R.id.btnQandA);
+        btnOutfit = findViewById(R.id.btnOutfit);
 
 
 
@@ -54,6 +55,13 @@ public class MainPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainPageActivity.this, QandActivity.class));
+            }
+        });
+
+        btnOutfit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainPageActivity.this, OutfitSelectionActivity.class));
             }
         });
     }
