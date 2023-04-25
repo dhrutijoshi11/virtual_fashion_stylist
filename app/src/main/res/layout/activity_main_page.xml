@@ -65,7 +65,7 @@
         app:iss_corner_radius="10"
         app:iss_delay="1000"
         app:iss_period="1000"
-        app:iss_title_background="@color/gray"
+        app:iss_title_background="@color/grey"
         tools:layout_editor_absoluteX="6dp" >
 
     </com.denzcoskun.imageslider.ImageSlider>

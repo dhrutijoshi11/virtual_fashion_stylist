@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class QandActivity extends AppCompatActivity {
 
-    Button btnBodyType, btnSkinType;
+    Button btnBodyType, btnSkinType, btnQuiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class QandActivity extends AppCompatActivity {
         setContentView(R.layout.activity_qand);
         btnBodyType=findViewById(R.id.btnBodyType);
         btnSkinType=findViewById(R.id.btnSkinType);
+        btnQuiz = findViewById(R.id.btnQuiz);
 
 
         btnBodyType.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +33,13 @@ public class QandActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(QandActivity.this, SkinColorActivity.class));
+            }
+        });
+
+        btnQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(QandActivity.this, QuizActivity.class));
             }
         });
     }

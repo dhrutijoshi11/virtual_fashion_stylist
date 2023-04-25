@@ -52,7 +52,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginTop="20dp"
-                    android:text="Lets find out about Your style"
+                    android:text="Your Personal Style lets find out!!!"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textSize="30dp"
@@ -63,11 +63,25 @@
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
-                    android:layout_height="44dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/input_bg"
                     android:backgroundTint="@color/grey"
-                    android:text="What is your body type?"
+                    android:text="Choose ONE answer which suits you most! Then note down the corresponding letter (A to G)."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="1. My favorite color is..."
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="25dp"
@@ -82,36 +96,20 @@
                     android:layout_marginLeft="10dp"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/hourGlass"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:background="@android:color/transparent"
-                        android:text="" />
-
                     <ImageView
-                        android:id="@+id/hourGlass_image"
+                        android:id="@+id/q1"
                         android:layout_width="153dp"
                         android:layout_height="217dp"
                         android:background="@android:drawable/editbox_background_normal"
-                        android:src="@drawable/hourglass" />
+                        android:src="@drawable/q1" />
 
-
-                    <RadioButton
-                        android:id="@+id/rectangle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:background="@android:color/transparent"
-                        android:text="" />
 
                     <ImageView
-                        android:id="@+id/rectangle_image"
-                        android:layout_width="160dp"
-                        android:layout_height="200dp"
+                        android:id="@+id/q2"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
                         android:background="@android:drawable/editbox_background_normal"
-                        android:src="@drawable/rectangle" />
+                        android:src="@drawable/q2" />
                 </GridLayout>
 
                 <GridLayout
@@ -121,35 +119,41 @@
                     android:layout_marginLeft="10dp"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/pear"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:background="@android:color/transparent"
-                        android:text="" />
-
                     <ImageView
-                        android:id="@+id/pear_image"
+                        android:id="@+id/q3"
                         android:layout_width="160dp"
                         android:layout_height="200dp"
                         android:background="@android:drawable/editbox_background_normal"
-                        android:src="@drawable/pear" />
-
-                    <RadioButton
-                        android:id="@+id/invertedTriangle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:background="@android:color/transparent"
-                        android:text="" />
+                        android:src="@drawable/q3" />
 
                     <ImageView
-                        android:id="@+id/invertedTriangle_image"
+                        android:id="@+id/q4"
                         android:layout_width="150dp"
                         android:layout_height="200dp"
                         android:background="@android:drawable/editbox_background_normal"
-                        android:src="@drawable/invertedtriangle" />
+                        android:src="@drawable/q4" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q5"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q5" />
+
+                    <ImageView
+                        android:id="@+id/q6"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q6" />
                 </GridLayout>
                 <GridLayout
                     android:layout_width="wrap_content"
@@ -158,38 +162,27 @@
                     android:layout_marginLeft="10dp"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/apple"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:background="@android:color/transparent"
-                        android:text="" />
-
                     <ImageView
-                        android:id="@+id/apple_image"
+                        android:id="@+id/q7"
                         android:layout_width="150dp"
                         android:layout_height="200dp"
                         android:background="@android:drawable/editbox_background_normal"
-                        android:src="@drawable/apple" />
+                        android:src="@drawable/q7" />
                 </GridLayout>
-
 
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:background="@drawable/input_bg"
-                    android:backgroundTint="@color/grey"
-                    android:text="What is you skin color?"
+                    android:text="2. During weekdays you would see me in this combination.."
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="25dp"
                     android:textStyle="bold"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="361dp" />
-
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
 
                 <GridLayout
                     android:layout_width="wrap_content"
@@ -198,36 +191,20 @@
                     android:layout_marginLeft="10dp"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/light"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:background="@android:color/transparent"
-                        android:text="" />
+                    <ImageView
+                        android:id="@+id/q8"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q8" />
+
 
                     <ImageView
-                        android:id="@+id/light_image"
-                        android:layout_width="160dp"
-                        android:layout_height="200dp"
+                        android:id="@+id/q9"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
                         android:background="@android:drawable/editbox_background_normal"
-                        android:src="@drawable/light" />
-
-
-                    <RadioButton
-                        android:id="@+id/normal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:background="@android:color/transparent"
-                        android:text="" />
-
-                    <ImageView
-                        android:id="@+id/normal_image"
-                        android:layout_width="160dp"
-                        android:layout_height="200dp"
-                        android:background="@android:drawable/editbox_background_normal"
-                        android:src="@drawable/normal" />
+                        android:src="@drawable/q9" />
                 </GridLayout>
 
                 <GridLayout
@@ -237,35 +214,41 @@
                     android:layout_marginLeft="10dp"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/tan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:background="@android:color/transparent"
-                        android:text="" />
-
                     <ImageView
-                        android:id="@+id/tan_image"
+                        android:id="@+id/q10"
                         android:layout_width="160dp"
                         android:layout_height="200dp"
                         android:background="@android:drawable/editbox_background_normal"
-                        android:src="@drawable/tan" />
-
-                    <RadioButton
-                        android:id="@+id/brown"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:background="@android:color/transparent"
-                        android:text="" />
+                        android:src="@drawable/q10" />
 
                     <ImageView
-                        android:id="@+id/brown_image"
+                        android:id="@+id/q11"
                         android:layout_width="150dp"
                         android:layout_height="200dp"
                         android:background="@android:drawable/editbox_background_normal"
-                        android:src="@drawable/brown" />
+                        android:src="@drawable/q11" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q12"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q12" />
+
+                    <ImageView
+                        android:id="@+id/q13"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q13" />
                 </GridLayout>
                 <GridLayout
                     android:layout_width="wrap_content"
@@ -274,186 +257,1339 @@
                     android:layout_marginLeft="10dp"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/veryDark"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:background="@android:color/transparent"
-                        android:text="" />
-
                     <ImageView
-                        android:id="@+id/verydark_image"
+                        android:id="@+id/q14"
                         android:layout_width="150dp"
                         android:layout_height="200dp"
                         android:background="@android:drawable/editbox_background_normal"
-                        android:src="@drawable/verydark" />
+                        android:src="@drawable/q14" />
                 </GridLayout>
-
-
 
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:background="@drawable/input_bg"
-                    android:backgroundTint="@color/grey"
-                    android:text="What kind of style do you prefer?"
+                    android:text="3. My go-to fabric is..."
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="25dp"
                     android:textStyle="bold"
                     tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="673dp" />
+                    tools:layout_editor_absoluteY="99dp" />
 
-                <RadioButton
-                    android:id="@+id/radioButton14"
-                    android:layout_width="110dp"
-                    android:layout_height="44dp"
-                    android:text="Comfy"
-                    tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="709dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
 
-                <RadioButton
-                    android:id="@+id/radioButton15"
-                    android:layout_width="118dp"
-                    android:layout_height="48dp"
-                    android:text="Classic"
-                    tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="709dp" />
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="A. Cotton" />
 
-                <RadioButton
-                    android:id="@+id/radioButton16"
-                    android:layout_width="117dp"
-                    android:layout_height="55dp"
-                    android:text="Elegant"
-                    tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="709dp" />
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="B. Wool" />
 
-                <RadioButton
-                    android:id="@+id/radioButton17"
-                    android:layout_width="120dp"
-                    android:layout_height="44dp"
-                    android:text="Romantic"
-                    tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="709dp" />
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="C. Cashmere" />
 
-                <RadioButton
-                    android:id="@+id/radioButton18"
-                    android:layout_width="120dp"
-                    android:layout_height="49dp"
-                    android:text="Creative"
-                    tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="709dp" />
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="D. Silk, Chiffon" />
 
-                <RadioButton
-                    android:id="@+id/radioButton19"
-                    android:layout_width="120dp"
-                    android:layout_height="53dp"
-                    android:text="Trendy"
-                    tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="709dp" />
+                    <TextView
+                        android:id="@+id/t5"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="E. Velvet" />
+
+                    <TextView
+                        android:id="@+id/t6"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="F. Lycra" />
+
+                    <TextView
+                        android:id="@+id/t7"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="G. Whatever Fabric is Trending" />
+
+
+
+                </LinearLayout>
 
 
                 <TextView
                     android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Don't know your style? No worries, take a quiz and find out!!"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="4. If I was shoe shopping, I would buy..."
                     android:textAlignment="center"
-                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
                     android:textStyle="bold"
                     tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="673dp" />
+                    tools:layout_editor_absoluteY="99dp" />
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="246dp"
-                    android:layout_height="67dp"
-                    android:layout_marginLeft="85dp"
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Know your style!!!" />
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q15"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q15" />
+
+
+                    <ImageView
+                        android:id="@+id/q16"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q16" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q17"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q17" />
+
+                    <ImageView
+                        android:id="@+id/q18"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q18" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q19"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q19" />
+
+                    <ImageView
+                        android:id="@+id/q20"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q20" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q21"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q21" />
+                </GridLayout>
 
                 <TextView
                     android:id="@+id/textView8"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:background="@drawable/input_bg"
-                    android:backgroundTint="@color/grey"
-                    android:text="How do you typically like to accessorize your outfits?"
+                    android:text="5. Time to party! My outfit would be..."
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="25dp"
                     android:textStyle="bold"
                     tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="673dp" />
+                    tools:layout_editor_absoluteY="99dp" />
 
-                <RadioButton
-                    android:id="@+id/radioButton20"
-                    android:layout_width="136dp"
-                    android:layout_height="47dp"
-                    android:text="Very less"
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q22"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q22" />
+
+
+                    <ImageView
+                        android:id="@+id/q23"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q23" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q24"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q24" />
+
+                    <ImageView
+                        android:id="@+id/q25"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q25" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q26"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q26" />
+
+                    <ImageView
+                        android:id="@+id/q27"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q27" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q28"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q28" />
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="6. My bag would look like..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
                     tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="709dp" />
+                    tools:layout_editor_absoluteY="99dp" />
 
-                <RadioButton
-                    android:id="@+id/radioButton21"
-                    android:layout_width="136dp"
-                    android:layout_height="48dp"
-                    android:text="Moderate"
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q29"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q29" />
+
+
+                    <ImageView
+                        android:id="@+id/q30"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q30" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q31"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q31" />
+
+                    <ImageView
+                        android:id="@+id/q32"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q32" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q33"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q33" />
+
+                    <ImageView
+                        android:id="@+id/q34"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q34" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q35"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q35" />
+                </GridLayout>
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="7. My hair style is..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
                     tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="709dp" />
+                    tools:layout_editor_absoluteY="99dp" />
 
-                <RadioButton
-                    android:id="@+id/radioButton22"
-                    android:layout_width="196dp"
-                    android:layout_height="51dp"
-                    android:text="Love to accessorize!!"
-                    tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="709dp" />
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
 
+                    <ImageView
+                        android:id="@+id/q36"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q36" />
+
+
+                    <ImageView
+                        android:id="@+id/q37"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q37" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q38"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q38" />
+
+                    <ImageView
+                        android:id="@+id/q39"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q39" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q40"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q40" />
+
+                    <ImageView
+                        android:id="@+id/q41"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q41" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q42"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q42" />
+                </GridLayout>
 
 
 
 
                 <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:background="@drawable/input_bg"
-                    android:backgroundTint="@color/grey"
-                    android:text=" What is your Go to outift? (Just curious to know)"
+                    android:text="8. This is the best accessory to accompany my look."
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="25dp"
                     android:textStyle="bold"
                     tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="673dp" />
+                    tools:layout_editor_absoluteY="99dp" />
 
-                <EditText
-                    android:id="@+id/edittext_input"
-                    android:layout_width="300dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="10dp"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <Button
-                    android:id="@+id/button_submit"
+                <GridLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/edittext_input"
-                    android:layout_marginLeft="97dp"
-                    android:layout_marginTop="30dp"
-                    android:text="Its time to Find out !!"
-                    android:textSize="16sp" />
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
+                    <ImageView
+                        android:id="@+id/q43"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q43" />
+
+
+                    <ImageView
+                        android:id="@+id/q44"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q44" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q45"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q45" />
+
+                    <ImageView
+                        android:id="@+id/q46"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q46" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q47"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q47" />
+
+                    <ImageView
+                        android:id="@+id/q48"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q48" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q49"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q49" />
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="9. If you would see me on a weekday, my look would be.."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q50"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q50" />
+
+
+                    <ImageView
+                        android:id="@+id/q51"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q51" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q52"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q52" />
+
+                    <ImageView
+                        android:id="@+id/q53"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q53" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q54"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q54" />
+
+                    <ImageView
+                        android:id="@+id/q55"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q55" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q56"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q56" />
+                </GridLayout>
+
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="10. My favorite fit is...."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/t8"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="A. Comfy" />
+
+                    <TextView
+                        android:id="@+id/t9"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="B. Standard Fit" />
+
+                    <TextView
+                        android:id="@+id/t10"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="C. Tailored Fit" />
+
+                    <TextView
+                        android:id="@+id/t11"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="D. Flowy" />
+
+                    <TextView
+                        android:id="@+id/t12"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="E. Figure Hugging" />
+
+                    <TextView
+                        android:id="@+id/t13"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="F. Layer on layer" />
+
+                    <TextView
+                        android:id="@+id/t14"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:text="G. Artisan" />
+
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="11. If you'd see me on the beach, I'd be wearing this swimsuit.."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q57"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q57" />
+
+
+                    <ImageView
+                        android:id="@+id/q58"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q58" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q59"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q59" />
+
+                    <ImageView
+                        android:id="@+id/q60"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q60" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q61"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q61" />
+
+                    <ImageView
+                        android:id="@+id/q62"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q62" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q63"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q63" />
+                </GridLayout>
+
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="12. This is the bag that would complement most of my outfits..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q64"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q64" />
+
+
+                    <ImageView
+                        android:id="@+id/q65"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q65" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q66"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q66" />
+
+                    <ImageView
+                        android:id="@+id/q67"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q67" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q68"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q68" />
+
+                    <ImageView
+                        android:id="@+id/q69"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q69" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q70"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q70" />
+                </GridLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="13. On the weekend, you could see me in this outfit.."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q71"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q71" />
+
+
+                    <ImageView
+                        android:id="@+id/q72"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q72" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q73"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q73" />
+
+                    <ImageView
+                        android:id="@+id/q74"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q74" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q75"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q75" />
+
+                    <ImageView
+                        android:id="@+id/q76"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q76" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q77"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q77" />
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="14. My makeup style is.."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q78"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q78" />
+
+
+                    <ImageView
+                        android:id="@+id/q79"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q79" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q80"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q80" />
+
+                    <ImageView
+                        android:id="@+id/q81"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q81" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q82"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q82" />
+
+                    <ImageView
+                        android:id="@+id/q83"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q83" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q84"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q84" />
+                </GridLayout>
+
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="15. My office style is..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q85"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q85" />
+
+
+                    <ImageView
+                        android:id="@+id/q86"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q86" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q87"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q87" />
+
+                    <ImageView
+                        android:id="@+id/q88"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q88" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q89"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q89" />
+
+                    <ImageView
+                        android:id="@+id/q90"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q90" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q91"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q91" />
+                </GridLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="Time to count!  Which letter has the highest score?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:text="Your Style is......."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="45dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q92"
+                        android:layout_width="153dp"
+                        android:layout_height="217dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q92" />
+
+
+                    <ImageView
+                        android:id="@+id/q93"
+                        android:layout_width="150dp"
+                        android:layout_height="212dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q93" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q94"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q94" />
+
+                    <ImageView
+                        android:id="@+id/q95"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q95" />
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q96"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q89" />
+
+                    <ImageView
+                        android:id="@+id/q97"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q97" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/q98"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:src="@drawable/q98" />
+                </GridLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
 
 
         </RelativeLayout>

@@ -23,7 +23,7 @@ public class RomanticActivity extends AppCompatActivity {
         mlist.add(new photos(R.drawable.r1));
         mlist.add(new photos(R.drawable.r2));
         mlist.add(new photos(R.drawable.r3));
-        mlist.add(new photos(R.drawable.r4));
+        //mlist.add(new photos(R.drawable.r4));
         mlist.add(new photos(R.drawable.r5));
         mlist.add(new photos(R.drawable.r6));
         mlist.add(new photos(R.drawable.r7));

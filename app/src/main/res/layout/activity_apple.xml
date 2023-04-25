@@ -1,9 +1,493 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AppleActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:backgroundTint="@color/grey"
+        app:menu="@menu/toolbar"
+        app:navigationIcon="@drawable/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VFS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"></TextView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Styling the Apple Body Type"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="54dp"
+                android:textSize="46sp"/>
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The apple body shape can appear top-heavy due to a full chest and upper body with little to no waist definition."
+                    android:textAlignment="center"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="452dp"
+                    android:background="@drawable/a1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which styles of tops do you think would complement an apple body shape?"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="36sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lets first find out about the Neckline"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Necklines for the apple pear body should break up the chest vertically (to create a visual separation between bust and tummy) and take attention away from the fuller midsection."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="325dp"
+                        android:background="@drawable/a2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering neckline styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/a3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lets now find out about the Sleeves"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To take attention away from the wider midriff, sleeves for an apple body shape should accentuate the upper body and arms. The best types of sleeves to take attention away from the midriff are detailed sleeves - such as slits, gathers, cuffs, and draped fabrics."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="357dp"
+                        android:background="@drawable/a4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering sleeve styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/a5" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shirts, T-Shirts and Other Tops"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To draw the eye away from the midsection and towards the bust and shoulders, shirts should highlight the latter area whilst nicely skimming over the tummy."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="357dp"
+                        android:background="@drawable/a6" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering shirt and top styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/a7" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Knitwear for Winter"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Knitwear naturally reveals every curve of the body with its thick fabric. Because apple shapes are curviest on top, a classic jumper may highlight areas you would rather conceal."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="385dp"
+                        android:background="@drawable/a8" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jackets"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jackets are a great way to conceal a wider midsection if they skim over it. The right jackets to achieve this have structured lines and fabrics. Wrap style and tailored jackets work well. Make sure the jacket is snug on the shoulders."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="385dp"
+                        android:background="@drawable/a9" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering jacket styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/a10" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Coats"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Like jackets, coats can be used to nicely cover up a wider midsection. Structured coats are the best option."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="385dp"
+                        android:background="@drawable/a11" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering coat styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/a12" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which styles of bottoms do you think would complement an apple body shape?"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="36sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trousers"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trousers for the apple-shaped body should aim to minimise the lower body. Wide-leg, flowing trousers are very flattering on an apple body shape since they balance out the wider midsection with the slimmer legs."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/a13" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering trouser styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/a14" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jeans"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The right jeans styles for the apple body shape don't add extra weight to the midsection but gently camouflage it."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/a15" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering jean styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/a16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skirts"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skirts for the apple shape body should disguise the wider mid-section. To achieve this, they should hit right above the knee, knee, or at the calf."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/a17" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering skirt styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/a18" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shorts"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shorts for the apple body shape should balance out the wider midsection with the slimmer legs."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/a21" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which styles of dresses do you think would complement an apple body shape?"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="36sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dresses"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The right dress for the apple body shape skims over the midsection without clinging to the body."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/a19" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering dress styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/a20" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jumpsuits and Playsuits"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Since jumpsuits are generally fitted, they highlight the body's silhouette and can so be unforgiving. For the apple body shape, that means finding a jumpsuit that does not emphasise the wider midriff."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/a22" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/a23" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering Jumpsuits and Playsuits styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/a24" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

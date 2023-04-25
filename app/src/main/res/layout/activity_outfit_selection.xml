@@ -10,8 +10,8 @@
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/gray"
-        android:backgroundTint="@color/gray"
+        android:background="@color/grey"
+        android:backgroundTint="@color/grey"
         app:menu="@menu/toolbar"
         app:navigationIcon="@drawable/menu">
 

@@ -1,9 +1,483 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PearActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:backgroundTint="@color/grey"
+        app:menu="@menu/toolbar"
+        app:navigationIcon="@drawable/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VFS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"></TextView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Styling the Pear Body Type"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="54dp"
+                android:textSize="46sp"/>
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The pear body shape is heavier on the bottom which creates an imbalance with the upper half of the body. The key to dressing this body shape is to take attention away from the wider hips and to draw it towards the upper body and defined waist instead."
+                    android:textAlignment="center"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="452dp"
+                    android:background="@drawable/p1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which styles of tops do you think would complement an pear body shape?"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="36sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lets first find out about the Neckline"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To optically widen the shoulder and bust areas of the pear body shape, necklines should be wide."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="280dp"
+                        android:background="@drawable/p2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering neckline styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/p3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lets now find out about the Sleeves"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If the sleeve is short, opt for wide and embellished styles, which will add volume to the upper body.For long sleeves, however, the opposite is true: you want to keep the volume around your hips to a minimum. In this case, it is best to let the sleeve taper while at the same time adding volume to the shoulder area."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="357dp"
+                        android:background="@drawable/p4" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="357dp"
+                        android:background="@drawable/p5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering sleeve styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="248dp"
+                        android:background="@drawable/p6" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shirts, T-Shirts and Other Tops"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fitted and nipped tops help accentuate the waist.Bright colours, bold patterns, details and embellishments around the bust and shoulders will draw attention to the upper body and away from the wider hips."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="357dp"
+                        android:background="@drawable/p7" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering shirt and top styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="268dp"
+                        android:background="@drawable/p8" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Knitwear for Winter"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To flatter the pear shape, opt for shorter jumpers that hit just at the hip bones."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="385dp"
+                        android:background="@drawable/p9" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jackets"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jackets for a pear-shaped body should add volume to the bust and shoulder areas while either avoiding the hip area altogether or skimming over it. A cropped jacket will add structure and volume to the shoulder and bust areas while showing off the slim waist."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="385dp"
+                        android:background="@drawable/p10" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering jacket styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/p11" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Coats"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To play down the lower part of the pear-shaped body, a coat has to hit at the right length. Coats that are too short accentuate the wide hip area, and those that are too long overwhelm the body frame. The best coat length sits right under the hips and mid-thigh."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="385dp"
+                        android:background="@drawable/p12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering coat styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/p13" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which styles of bottoms do you think would complement an pear body shape?"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="36sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trousers"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The right trousers for the pear body shape will minimise the lower body and de-emphasise the hips."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/p14" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jeans"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Just like trousers, jeans should aim to play down the wider hips of the pear body shape. Jeans should be mid- to high-rise and straight, bootcut, trouser-cut or flare. Relaxed fits work best."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/p15" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering jean styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/p16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skirts"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skirts are an excellent way to cover up the wide hips and bottoms of the pear-shaped body."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/p17" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering skirt styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/p18" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shorts"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shorts for a pear-shaped body should skim nicely over the wider hip area without adding volume to it."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/p21" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which styles of dresses do you think would complement an pear body shape?"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="36sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dresses"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dresses should draw attention to the waist while concealing the lower body. "
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        android:background="@drawable/p19" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering dress styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/p20" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jumpsuits and Playsuits"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jumpsuits for the pear body shape should balance the silhouette by adding volume on top and skimming over the wider hips."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/p22" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/p23" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering Jumpsuits and Playsuits styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/p24" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

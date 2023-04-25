@@ -10,8 +10,8 @@
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/gray"
-        android:backgroundTint="@color/gray"
+        android:background="@color/grey"
+        android:backgroundTint="@color/grey"
         app:menu="@menu/toolbar"
         app:navigationIcon="@drawable/menu"
         tools:ignore="MissingConstraints"
@@ -53,12 +53,13 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:text="Styling the Hourglass"
+        android:layout_height="wrap_content"
+        android:text="Styling the Hourglass Body Type"
         android:textAlignment="center"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="94dp"
         tools:layout_editor_absoluteY="54dp"
-        android:textSize="36sp"/>
+        android:textSize="46sp"/>
 
     <LinearLayout
         android:id="@+id/container"
@@ -83,39 +84,414 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Which styles of tops do you think would complement an hourglass body shape?"
+            android:textStyle="bold"
             android:textAlignment="center"
-            android:textSize="20sp"/>
+            android:textSize="36sp"/>
 
-        <Button
-            android:id="@+id/btnTop"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lets get to know!!"
-            android:textSize="20sp"/>
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lets first find out about the Neckline"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The necklines for hourglass body shapes should avoid widening the shoulder line or adding unnecessary volume, in order to maintain the natural silhouette."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="280dp"
+                android:background="@drawable/h2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering neckline styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="220dp"
+                android:background="@drawable/h3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lets now find out about the Sleeves"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose sleeves that maintain the hourglass silhouette by avoiding designs that widen the shoulder or hip line or add excessive volume."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="357dp"
+                android:background="@drawable/h4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering sleeve styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="220dp"
+                android:background="@drawable/h5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shirts, T-Shirts and Other Tops"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Look for shirts that will accentuate your waist and maintain the balanced look of the hourglass shape, i.e. tops should be fitted."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="357dp"
+                android:background="@drawable/h6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering shirt and top styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="220dp"
+                android:background="@drawable/h7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Knitwear for Winter"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A lightweight, form-fitting sweater is the best option,Lightweight fabrics and fine knits will complement your shape by highlighting your silhouette."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="385dp"
+                android:background="@drawable/h8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jackets"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Form-fitting and belted jackets are great. Single-breasted jackets are best since they don’t add extra bulk as double-breasted jackets do."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="385dp"
+                android:background="@drawable/h9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering jacket styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="206dp"
+                android:background="@drawable/h10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coats"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Like jackets, coats should be form-fitted and tailored to follow the hourglass body's natural silhouette."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="385dp"
+                android:background="@drawable/h11" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering coat styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="206dp"
+                android:background="@drawable/h12" />
+
+        </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Which styles of bottoms do you think would complement an hourglass body shape?"
+            android:textStyle="bold"
             android:textAlignment="center"
-            android:textSize="20sp"/>
-        <Button
-            android:id="@+id/btnBottom"
-            android:layout_width="match_parent"
+            android:textSize="36sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lets get to know!!"
-            android:textSize="20sp"/>
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trousers"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trousers for the hourglass body shape should be in balance with the rest of the body and outfit. Always coordinate trousers with the top you're wearing."
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="383dp"
+                android:background="@drawable/h13" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering trouser styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="206dp"
+                android:background="@drawable/h14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jeans"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Just like trousers, jeans should be balanced with the upper part of your outfit. Jeans should be mid- or high rise to elongate the legs. Wide waist bands are great."
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="383dp"
+                android:background="@drawable/h15" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering jean styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="206dp"
+                android:background="@drawable/h16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skirts"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The right skirt for the hourglass body shape accentuates the waist without adding too much bulk at the bottom."
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="383dp"
+                android:background="@drawable/h17" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering skirt styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="206dp"
+                android:background="@drawable/h18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shorts"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shorts for the hourglass body shape must not unbalance the naturally balanced figure. To make the waist appear smaller, opt for high-waisted shorts with contoured waistbands."
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="383dp"
+                android:background="@drawable/h19" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering short styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="206dp"
+                android:background="@drawable/h20" />
+
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Which styles of dresses do you think would complement an hourglass body shape?"
+            android:textStyle="bold"
             android:textAlignment="center"
-            android:textSize="20sp"/>
-        <Button
-            android:id="@+id/btnDress"
-            android:layout_width="match_parent"
+            android:textSize="36sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lets get to know!!"
-            android:textSize="20sp"/>
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dresses"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dresses for the hourglass body shape should draw the focus to the waist without adding extra volume to the bust."
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="383dp"
+                android:background="@drawable/h21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering dress styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="206dp"
+                android:background="@drawable/h22" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumpsuits and Playsuits"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Belted and form-fitting jumpsuits and playsuits are the best to accentuate the natural body line. Small pleats around the waist can give you a nipped-in look. The leg should not be too tapered (flared styles are better)."
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="383dp"
+                android:background="@drawable/h23" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="383dp"
+                android:background="@drawable/h24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A selection of flattering Jumpsuits and Playsuits styles:"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="425dp"
+                android:layout_height="206dp"
+                android:background="@drawable/h25" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -1,9 +1,506 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InvTriangleActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:backgroundTint="@color/grey"
+        app:menu="@menu/toolbar"
+        app:navigationIcon="@drawable/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VFS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"></TextView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="401dp"
+            android:layout_height="wrap_content"
+            android:text="Styling the Inverted Triangle Body Type"
+            android:textAlignment="center"
+            android:textSize="46sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The inverted triangle body shape is heavier on the top due to the wide shoulder line."
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="452dp"
+                android:background="@drawable/it1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which styles of tops do you think would complement an inverted triangle body shape?"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lets first find out about the Neckline"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The right neckline for the inverted triangle body shape plays down the wide shoulders and/or bust."
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:background="@drawable/it2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering neckline styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="220dp"
+                    android:background="@drawable/it3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lets now find out about the Sleeves"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Like necklines, sleeves should make the upper body appear slimmer. If the sleeve is short, opt for tight-fitted, tapered sleeves to avoid adding weight to your shoulders. Dropped shoulder points, shoulder slits and cut-outs make the shoulders appear slimmer."
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="357dp"
+                    android:background="@drawable/it4" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="357dp"
+                    android:background="@drawable/it5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering sleeve styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="220dp"
+                    android:background="@drawable/it6" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shirts, T-Shirts and Other Tops"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shirts for the inverted triangle body shape should emphasise the waist and play down the upper body and broad shoulders. Simple straight lines, wrap-style tops, splits on the waist or layering on the hips are great."
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="357dp"
+                    android:background="@drawable/it7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering shirt and top styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="220dp"
+                    android:background="@drawable/it8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Knitwear for Winter"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Since knitwear tends to add volume to the upper body (especially chunkier, heavier styles), the best options for the inverted triangle body is straight-cut and slim-fitting jumpers with a fine gauge."
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="385dp"
+                    android:background="@drawable/it9" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jackets"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jackets for the inverted triangle shape should de-emphasise the shoulders and upper body whilst highlighting the waist."
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="385dp"
+                    android:background="@drawable/it10" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering jacket styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/it11" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coats"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coats for the inverted triangle body shape should add volume around the hips and create a waist at the same time. To create volume around the hips and lower body, coats should flare at the hip line."
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="385dp"
+                    android:background="@drawable/it12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering coat styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/it13" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which styles of bottoms do you think would complement an inverted triangle body shape?"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="36sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trousers"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Any style that will accentuate and add volume to the bottom and leg line is great for the inverted triangle."
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/it14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering trouser styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/it15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jeans"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jeans should add dimension to the bottom and hips to make the shoulders look narrower."
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/it16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering jean styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/it17" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skirts"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skirts should add volume to the hips and balance out the shoulders. Any type of skirt style that flares from the hips and/or adds visual width to the hips is best for an inverted triangle body shape. Straight, full, A-line, ballerina, bias-cut or tulip skirts are great. Tiered, volume or dropped waistlines also work well."
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/it18" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering skirt styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/it19" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shorts"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shorts for the inverted triangle body shape should add volume to the lower body and hips."
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/it22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering skirt styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/it23" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which styles of dresses do you think would complement an inverted triangle body shape?"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="36sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dresses"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The right dress for the inverted triangle body adds volume at the hips to balance your shoulders. To achieve this, look for dresses that flare from the waist or hips. Simple, straight lines, shift dresses and A-line styles are great."
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/it20" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering dress styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/it21" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumpsuits and Playsuits"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumpsuits and playsuits are your best friends if you are an inverted triangle because your broad shoulders let the garments fall nicely down your silhouette. The only thing you need to make sure is to balance out the wide shoulders with the lower body."
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/it24" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="383dp"
+                    android:background="@drawable/it25" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A selection of flattering Jumpsuits and Playsuits styles:"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="425dp"
+                    android:layout_height="206dp"
+                    android:background="@drawable/it26" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

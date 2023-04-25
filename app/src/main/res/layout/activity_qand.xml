@@ -69,8 +69,8 @@
 
                 <TextView
                     android:id="@+id/styleQuote1"
-                    android:layout_width="272dp"
-                    android:layout_height="130dp"
+                    android:layout_width="267dp"
+                    android:layout_height="119dp"
                     android:layout_marginLeft="65dp"
                     android:layout_marginTop="10dp"
                     android:text="Wants to know what kind of outfits suits your Body Type check out here !!"
@@ -170,31 +170,7 @@
                     tools:layout_editor_absoluteX="14dp"
                     tools:layout_editor_absoluteY="99dp" />
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/input_bg"
-                    android:backgroundTint="@color/grey"
-                    android:text=" What is your Go to outift? (Just curious to know)"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    tools:layout_editor_absoluteX="14dp"
-                    tools:layout_editor_absoluteY="673dp" />
 
-
-
-                <EditText
-                    android:id="@+id/edittext_input"
-                    android:layout_width="300dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="55dp"
-                    android:layout_marginTop="10dp"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
 
             </LinearLayout>
 

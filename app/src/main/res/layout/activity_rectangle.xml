@@ -1,9 +1,479 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RectangleActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:backgroundTint="@color/grey"
+        app:menu="@menu/toolbar"
+        app:navigationIcon="@drawable/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VFS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"></TextView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Styling the Rectangle Body Type"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="54dp"
+                android:textSize="46sp"/>
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The upper and lower parts of the rectangle body are well-proportioned and create a balanced silhouette. The focus of this body shape should be on defining the waist by breaking up the rectangle."
+                    android:textAlignment="center"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="452dp"
+                    android:background="@drawable/re1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which styles of tops do you think would complement an rectangle body shape?"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="36sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lets first find out about the Neckline"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lower, wider necklines - such as wide V-, slash, scoop or sweetheart necklines, visually lengthen the shoulder and bust area."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="280dp"
+                        android:background="@drawable/re2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering neckline styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/re3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lets now find out about the Sleeves"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The right type of sleeve for the rectangle body adds interest and volume to the upper or lower body - depending on the sleeve length."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="357dp"
+                        android:background="@drawable/re4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering sleeve styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/re5" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:text="Shirts, T-Shirts and Other Tops"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shirts for the rectangle body should be creating shape by adding volume to the shoulder, bust and hip line while at the same pulling in the waist."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="357dp"
+                        android:background="@drawable/re6" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering shirt and top styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="220dp"
+                        android:background="@drawable/re7" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Knitwear for Winter"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Relaxed fits with curved detailing are the best option for the rectangle body to soften the squarish silhouette."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="385dp"
+                        android:background="@drawable/re8" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jackets"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="When it comes to outerwear, defining the waist is still a priority. Jackets should be nipped or belted in at the waist to create a shape."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="385dp"
+                        android:background="@drawable/re9" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering jacket styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/re10" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Coats"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Like jackets, coats should either be slighted fitted or follow the natural straight silhouette of the rectangle body."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/re11" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which styles of bottoms do you think would complement an rectangle body shape?"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="36sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trousers"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The right pair of trousers can add needed curves and volume to the lower body of the rectangle. Trouser styles that flare at the bottom, like boot cut, flare or wide leg, are great to add volume."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/re12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jeans"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jeans for the rectangle body should have embellishments around the hip and bottom area to add curves to the silhouette."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/re13" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering jean styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/re14" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skirts"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skirts are an ideal way to add volume to the lower body. Some ways to achieve this is through flared hemlines and details - such as ruffles, ruching, gathering or pleats."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/re15" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering skirt styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/re16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shorts"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Like other bottoms, shorts should be low- or mid-waisted for the rectangle body to avoid drawing attention to the waist"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/re19" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering short styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/re20" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which styles of dresses do you think would complement an rectangle body shape?"
+                    android:textAlignment="center"
+                    android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dresses"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A great dress for a rectangle body is balanced on top and bottom whilst pulling in the waist."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/re17" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering dress styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/re18" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jumpsuits and Playsuits"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="26sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Most jumpsuit and playsuit styles are great for the rectangle body as long as you keep the waist defined. Add a narrow or medium size belt – either at your waist or under your bust to pull it in visually. Or opt for a drawstring jumpsuit."
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/re21" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="383dp"
+                        android:background="@drawable/re22" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A selection of flattering Jumpsuits and Playsuits styles:"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="425dp"
+                        android:layout_height="206dp"
+                        android:background="@drawable/re23" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
