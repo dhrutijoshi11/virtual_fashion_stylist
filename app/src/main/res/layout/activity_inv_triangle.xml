@@ -13,8 +13,6 @@
         android:layout_height="wrap_content"
         android:background="@color/grey"
         android:backgroundTint="@color/grey"
-        app:menu="@menu/toolbar"
-        app:navigationIcon="@drawable/menu"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="0dp">
@@ -28,18 +26,6 @@
             android:textSize="30dp"></TextView>
 
     </com.google.android.material.appbar.MaterialToolbar>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </androidx.cardview.widget.CardView>
 
 
     <ScrollView

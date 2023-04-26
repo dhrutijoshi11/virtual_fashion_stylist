@@ -4,16 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SubBodyActivity">
+    tools:context=".CasualActivity2">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey"
-        android:backgroundTint="@color/grey"
-        app:menu="@menu/toolbar"
-        app:navigationIcon="@drawable/menu"
+        android:backgroundTint="#BF8FA0"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="0dp">
@@ -21,26 +19,24 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="VFS"
-            android:textAlignment="center"
+            android:text="             VFS"
             android:textColor="@color/white"
             android:textSize="30dp"></TextView>
 
     </com.google.android.material.appbar.MaterialToolbar>
 
-
-    <com.denzcoskun.imageslider.ImageSlider
-        android:id="@+id/imageSlide"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        app:iss_auto_cycle="true"
-        app:iss_corner_radius="10"
-        app:iss_delay="1000"
-        app:iss_period="1000"
-        app:iss_title_background="@color/grey"
-        app:layout_constraintTop_toBottomOf="@+id/toolBar"
-        tools:layout_editor_absoluteX="6dp" >
-
-    </com.denzcoskun.imageslider.ImageSlider>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/casual1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp"
+        android:background="#916F7B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

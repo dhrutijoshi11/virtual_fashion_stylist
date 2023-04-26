@@ -1,6 +1,7 @@
 package com.example.virtual_fashion_stylist;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +19,9 @@ public class BodyTypeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qnd);
+        Toolbar toolbar = findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         btnSubmit = findViewById(R.id.btnSubmit);
         btnHourGlass = findViewById(R.id.hourGlass);
         btnRectangle = findViewById(R.id.rectangle);

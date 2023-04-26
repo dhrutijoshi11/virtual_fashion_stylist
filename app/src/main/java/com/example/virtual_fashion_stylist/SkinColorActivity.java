@@ -1,6 +1,7 @@
 package com.example.virtual_fashion_stylist;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +20,9 @@ public class SkinColorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_skin_color);
+        Toolbar toolbar = findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         btnSubmit = findViewById(R.id.btnSubmit);
         btnLight = findViewById(R.id.btnLight);
         btnNormal = findViewById(R.id.btnNormal);

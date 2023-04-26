@@ -1,6 +1,7 @@
 package com.example.virtual_fashion_stylist;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,9 @@ public class QandActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qand);
+        Toolbar toolbar = findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         btnBodyType=findViewById(R.id.btnBodyType);
         btnSkinType=findViewById(R.id.btnSkinType);
         btnQuiz = findViewById(R.id.btnQuiz);

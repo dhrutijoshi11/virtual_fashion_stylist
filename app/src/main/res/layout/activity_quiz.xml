@@ -13,8 +13,6 @@
         android:layout_height="wrap_content"
         android:background="@color/grey"
         android:backgroundTint="@color/grey"
-        app:menu="@menu/toolbar"
-        app:navigationIcon="@drawable/menu"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="0dp">

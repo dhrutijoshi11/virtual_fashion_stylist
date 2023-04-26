@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -15,86 +15,116 @@
         android:theme="@style/Theme.Virtual_Fashion_Stylist"
         tools:targetApi="31">
         <activity
-            android:name=".OutfitSelectionActivity"
+            android:name=".CasualActivity2"
+            android:exported="false"
+            android:parentActivityName=".OutfitSelectionActivity"/>
+        <activity
+            android:name=".PartyActivity"
+            android:exported="false"
+            android:parentActivityName=".OutfitSelectionActivity" />
+        <activity
+            android:name=".FormalActivity"
+            android:exported="false"
+            android:parentActivityName=".OutfitSelectionActivity" />
+        <activity
+            android:name=".WeddingActivity"
+            android:exported="false"
+            android:parentActivityName=".OutfitSelectionActivity" />
+        <activity
+            android:name=".OutfitSuggestionsActivity"
             android:exported="false" />
+        <activity
+            android:name=".OutfitSelectionActivity"
+            android:exported="false"
+            android:parentActivityName=".MainPageActivity" />
         <activity
             android:name=".DarkActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".SkinColorActivity" />
         <activity
             android:name=".BrownActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".SkinColorActivity" />
         <activity
             android:name=".TanActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".SkinColorActivity" />
         <activity
             android:name=".NormalActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".SkinColorActivity" />
         <activity
             android:name=".LightActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".SkinColorActivity" />
         <activity
             android:name=".AppleActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".BodyTypeActivity" />
         <activity
             android:name=".PearActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".BodyTypeActivity" />
         <activity
             android:name=".InvTriangleActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".BodyTypeActivity" />
         <activity
             android:name=".RectangleActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DressActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BottomActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TopActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".BodyTypeActivity" />
         <activity
             android:name=".HourglassActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".BodyTypeActivity" />
         <activity
             android:name=".QandActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainPageActivity" />
         <activity
             android:name=".BodyTypeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SubBodyActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".QandActivity" />
         <activity
             android:name=".SkinColorActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".QandActivity" />
         <activity
             android:name=".CasualActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".InspirationLook" />
         <activity
             android:name=".ClassicActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".InspirationLook" />
         <activity
             android:name=".CreativeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".InspirationLook" />
         <activity
             android:name=".ElegantActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".InspirationLook" />
         <activity
             android:name=".QuizActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".InspirationLook" />
         <activity
             android:name=".RomanticActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".InspirationLook" />
         <activity
             android:name=".SexyActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".InspirationLook" />
         <activity
             android:name=".TrendyActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".InspirationLook" />
         <activity
             android:name=".InspirationLook"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainPageActivity" />
         <activity
             android:name=".SliderActivity"
             android:exported="false" />
@@ -105,15 +135,11 @@
             android:name=".MainPageActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".Profile"
-            android:label="profile"/>
-
+            android:label="profile" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -130,4 +156,3 @@
     </application>
 
 </manifest>
-

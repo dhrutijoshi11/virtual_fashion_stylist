@@ -125,72 +125,8 @@
                 app:layout_constraintStart_toStartOf="@+id/buttonLogin"
                 app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="515dp"
-                android:layout_marginBottom="182dp"
-                android:text="OR"
-                android:textColor="@color/white"
-                android:textSize="25sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/view"
-                app:layout_constraintHorizontal_bias="0.902"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
 
-            <View
-                android:id="@+id/view"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_marginStart="238dp"
-                android:layout_marginTop="528dp"
-                android:layout_marginEnd="17dp"
-                android:background="@color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/textView4"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <View
-                android:id="@+id/view3"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_marginStart="23dp"
-                android:layout_marginTop="528dp"
-                android:layout_marginEnd="16dp"
-                android:background="@color/white"
-                app:layout_constraintEnd_toStartOf="@+id/textView4"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/facebook"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="131dp"
-                android:layout_marginEnd="230dp"
-                android:layout_marginBottom="81dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4"
-                app:srcCompat="@drawable/facebook_logo" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="36dp"
-                android:layout_marginBottom="81dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/facebook"
-                app:layout_constraintTop_toBottomOf="@+id/textView4"
-                app:srcCompat="@drawable/google_logo" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
