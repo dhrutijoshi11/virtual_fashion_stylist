@@ -4,26 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#51525A"
+    android:background="#EAE08A"
     tools:context=".TrendyActivity">
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey"
-        android:backgroundTint="@color/grey"
+        android:backgroundTint="#EDC651"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
-            android:id="@+id/textView21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="VFS"
             android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="30dp"></TextView>
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold|italic"></TextView>
     </com.google.android.material.appbar.MaterialToolbar>
 
     <androidx.recyclerview.widget.RecyclerView

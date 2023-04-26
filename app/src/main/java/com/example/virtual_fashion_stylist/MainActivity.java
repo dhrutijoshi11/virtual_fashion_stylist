@@ -27,24 +27,28 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Views declaration
     TextView createAccount;
-
-
-
     EditText email, password;
     Button buttonLogin;
-    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
-    ProgressDialog progressDialog;
-
-    FirebaseAuth mAuth;
-    FirebaseUser mUser;
     ImageView imageView2;
 
+    // Email pattern for validation
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+
+    // Progress dialog for displaying loading message
+    ProgressDialog progressDialog;
+
+    // Firebase Authentication objects
+    FirebaseAuth mAuth;
+    FirebaseUser mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Initialize views
         createAccount=findViewById(R.id.createNewAccount);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         email=findViewById(R.id.email);
@@ -53,10 +57,8 @@ public class MainActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
         buttonLogin=findViewById(R.id.buttonLogin);
-        imageView2=findViewById(R.id.imageView2);
 
-
-
+        // Click listener for create account text view
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,21 +66,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Click listener for login button
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 performLogin();
             }
         });
-
-        imageView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, GoogleSignInActivity.class);
-            }
-        });
     }
 
+    // Function to validate user input and initiate login process
     private void performLogin() {
         String inputEmail = email.getText().toString();
         String inputPassword = password.getText().toString();
@@ -88,16 +85,19 @@ public class MainActivity extends AppCompatActivity {
         } else if (inputPassword.isEmpty() || password.length() < 6) {
             password.setError("Enter correct Password");
         } else {
+            // Display progress dialog while logging in
             progressDialog.setMessage("Please wait while Login....");
             progressDialog.setTitle("Logged in!!");
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
 
+            // Authenticate user using Firebase Authentication
             mAuth.signInWithEmailAndPassword(inputEmail, inputPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         progressDialog.dismiss();
+                        // Redirect user to next activity
                         sendUserToNextActivity();
                         Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     } else {
@@ -108,10 +108,13 @@ public class MainActivity extends AppCompatActivity {
             });
         }
     }
-        private void sendUserToNextActivity() {
-            Intent intent= new Intent(MainActivity.this, MainPageActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-        }
+
+    // Function to redirect user to next activity on successful login
+    private void sendUserToNextActivity() {
+        Intent intent= new Intent(MainActivity.this, MainPageActivity.class);
+        // Clear all previous activities from stack
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
 
 }

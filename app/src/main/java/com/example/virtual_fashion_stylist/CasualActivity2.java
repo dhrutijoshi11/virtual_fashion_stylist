@@ -20,9 +20,11 @@ public class CasualActivity2 extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        // Get the RecyclerView from the layout
         RecyclerView recyclerView=findViewById(R.id.casual1);
         recyclerView.setHasFixedSize(true);
 
+        // Create a list of photos
         List<photos> mlist = new ArrayList<>();
         mlist.add(new photos(R.drawable.c1));
         mlist.add(new photos(R.drawable.c2));
@@ -35,6 +37,7 @@ public class CasualActivity2 extends AppCompatActivity {
         mlist.add(new photos(R.drawable.c9));
         mlist.add(new photos(R.drawable.c10));
 
+        // Set the layout manager and adapter for the RecyclerView
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
         photosAdapter adapter= new photosAdapter(mlist);
 

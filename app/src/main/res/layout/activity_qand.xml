@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey"
-        android:backgroundTint="@color/grey"
+        android:backgroundTint="#87704F"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="0dp">
@@ -23,8 +23,8 @@
             android:text="VFS"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="30dp"></TextView>
-
+            android:textSize="40dp"
+            android:textStyle="bold|italic"></TextView>
     </com.google.android.material.appbar.MaterialToolbar>
 
     <ScrollView
@@ -53,16 +53,17 @@
                     android:text="Lets find out about Your style"
                     android:textAlignment="center"
                     android:textAllCaps="true"
+                    android:textColor="#7E692B"
                     android:textSize="30dp"
-                    android:textStyle="bold"
+                    android:textStyle="bold|italic"
                     tools:layout_editor_absoluteX="176dp"
                     tools:layout_editor_absoluteY="54dp" />
 
                 <ImageView
                     android:layout_width="271dp"
                     android:layout_height="280dp"
-                    android:layout_marginTop="30dp"
                     android:layout_marginLeft="65dp"
+                    android:layout_marginTop="30dp"
                     android:background="@drawable/side1"></ImageView>
 
                 <TextView
@@ -73,8 +74,9 @@
                     android:layout_marginTop="10dp"
                     android:text="Wants to know what kind of outfits suits your Body Type check out here !!"
                     android:textAlignment="center"
+                    android:textColor="#7E692B"
                     android:textSize="25dp"
-                    android:textStyle="bold"
+                    android:textStyle="bold|italic"
                     tools:layout_editor_absoluteX="176dp"
                     tools:layout_editor_absoluteY="54dp" />
 
@@ -85,12 +87,12 @@
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/input_bg"
-                    android:backgroundTint="@color/grey"
+                    android:backgroundTint="#87704F"
                     android:text="Body type?"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="25dp"
-                    android:textStyle="bold"
+                    android:textStyle="bold|italic"
                     tools:layout_editor_absoluteX="14dp"
                     tools:layout_editor_absoluteY="99dp" />
 
@@ -110,8 +112,8 @@
                     android:text="Don't know what kind color suits your skin color??"
                     android:textAlignment="center"
                     android:textSize="25dp"
-                    android:textStyle="bold"
-                    tools:layout_editor_absoluteX="176dp"
+                    android:textColor="#7E692B"
+                    android:textStyle="bold|italic"                    tools:layout_editor_absoluteX="176dp"
                     tools:layout_editor_absoluteY="54dp" />
 
                 <Button
@@ -120,13 +122,12 @@
                     android:layout_height="80dp"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/input_bg"
-                    android:backgroundTint="@color/grey"
+                    android:backgroundTint="#87704F"
                     android:text="Skin Color?"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="25dp"
-                    android:textStyle="bold"
+                    android:textStyle="bold|italic"
                     tools:layout_editor_absoluteX="14dp"
                     tools:layout_editor_absoluteY="99dp" />
 
@@ -147,8 +148,8 @@
                     android:text="Wants to know your particular style? What is your style according to ur preference? Take a quiz and find out!!"
                     android:textAlignment="center"
                     android:textSize="25dp"
-                    android:textStyle="bold"
-                    tools:layout_editor_absoluteX="176dp"
+                    android:textColor="#7E692B"
+                    android:textStyle="bold|italic"                    tools:layout_editor_absoluteX="176dp"
                     tools:layout_editor_absoluteY="54dp" />
 
 
@@ -159,15 +160,14 @@
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/input_bg"
-                    android:backgroundTint="@color/grey"
+                    android:backgroundTint="#87704F"
                     android:text="Quiz Time!!"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
+                    android:textStyle="bold|italic"
                     android:textSize="25dp"
-                    android:textStyle="bold"
                     tools:layout_editor_absoluteX="14dp"
                     tools:layout_editor_absoluteY="99dp" />
-
 
 
             </LinearLayout>

@@ -4,10 +4,12 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/bg1"
         android:label="@string/app_name"
@@ -17,7 +19,7 @@
         <activity
             android:name=".CasualActivity2"
             android:exported="false"
-            android:parentActivityName=".OutfitSelectionActivity"/>
+            android:parentActivityName=".OutfitSelectionActivity" />
         <activity
             android:name=".PartyActivity"
             android:exported="false"

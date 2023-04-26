@@ -31,6 +31,8 @@ public class BodyTypeActivity extends AppCompatActivity {
 
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
+
+            // Check which radio button is checked and start appropriate activity
             @Override
             public void onClick(View view) {
                 if (btnHourGlass.isChecked()) {

@@ -17,18 +17,22 @@ import java.util.List;
 
 public class OutfitSuggestionsActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Set the layout for this activity
         setContentView(R.layout.activity_outfit_suggestions);
+
+        // Set the toolbar and enable the back button
         Toolbar toolbar = findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        // Get the event category selected in the previous activity
         String eventCategory = getIntent().getStringExtra("eventCategory");
 
+        // Based on the event category, start the appropriate activity
         switch (eventCategory) {
             case "Casual":
                 Intent intent = new Intent(OutfitSuggestionsActivity.this, CasualActivity2.class);
@@ -48,5 +52,4 @@ public class OutfitSuggestionsActivity extends AppCompatActivity {
                 break;
         }
     }
-
 }

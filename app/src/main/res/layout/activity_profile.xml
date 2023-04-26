@@ -8,25 +8,6 @@
     android:background="@drawable/profilebkg"
     tools:context=".Profile">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/grey"
-        android:backgroundTint="@color/grey"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="0dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="VFS"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="30dp"></TextView>
-
-    </com.google.android.material.appbar.MaterialToolbar>
 
     <ImageView
         android:layout_width="100dp"
@@ -76,43 +57,6 @@
         app:layout_constraintTop_toBottomOf="@id/titleUsername">
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <TextView
-                android:id="@+id/name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Name"
-                android:textColor="@color/lavender"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/profileName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="test"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/grey"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_margin="10dp"
-            android:alpha="0.5"
-            android:background="@color/lavender" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -137,41 +81,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="test@gmail.com"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/grey"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_margin="10dp"
-            android:alpha="0.5"
-            android:background="@color/lavender" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <TextView
-                android:id="@+id/username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Username"
-                android:textColor="@color/lavender"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/profileUsername"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="test"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/grey"
                 android:textSize="18sp" />

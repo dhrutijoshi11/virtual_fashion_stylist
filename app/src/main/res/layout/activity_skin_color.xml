@@ -12,19 +12,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey"
-        android:backgroundTint="@color/grey"
+        android:backgroundTint="#87704F"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
-            android:id="@+id/textView21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="VFS"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="30dp"></TextView>
+            android:textSize="40dp"
+            android:textStyle="bold|italic"></TextView>
     </com.google.android.material.appbar.MaterialToolbar>
 
     <ScrollView
@@ -54,7 +54,8 @@
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textSize="30dp"
-                    android:textStyle="bold"
+                    android:textColor="#7E692B"
+                    android:textStyle="bold|italic"
                     tools:layout_editor_absoluteX="176dp"
                     tools:layout_editor_absoluteY="54dp" />
 
@@ -65,10 +66,10 @@
                     android:layout_height="44dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/input_bg"
-                    android:backgroundTint="@color/grey"
                     android:text="What is you skin color?"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#87704F"
                     android:textSize="25dp"
                     android:textStyle="bold"
                     tools:layout_editor_absoluteX="16dp"

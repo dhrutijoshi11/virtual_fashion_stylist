@@ -28,9 +28,12 @@ public class MainPageActivity extends AppCompatActivity {
     private ImageSlider imageSlider;
 
     Button btnInspirationLook, btnQandA, btnOutfit ;
+
+    // This method is called when the activity is created
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Setting the content view to activity_main_page layout file
         setContentView(R.layout.activity_main_page);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -39,14 +42,15 @@ public class MainPageActivity extends AppCompatActivity {
         btnQandA=findViewById(R.id.btnQandA);
         btnOutfit = findViewById(R.id.btnOutfit);
 
-
-
+        // Creating a list of slide models and adding images to it
         ArrayList<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel ( R.drawable.img1, ScaleTypes.FIT));
-        slideModels.add(new SlideModel ( R.drawable.img2, ScaleTypes.FIT));
-        slideModels.add(new SlideModel ( R.drawable.img3, ScaleTypes.FIT));
-        slideModels.add(new SlideModel ( R.drawable.img4, ScaleTypes.FIT));
-        slideModels.add(new SlideModel ( R.drawable.img5, ScaleTypes.FIT));
+        slideModels.add(new SlideModel ( R.drawable.im1, ScaleTypes.FIT));
+        slideModels.add(new SlideModel ( R.drawable.im2, ScaleTypes.FIT));
+        slideModels.add(new SlideModel ( R.drawable.im3, ScaleTypes.FIT));
+        slideModels.add(new SlideModel ( R.drawable.im4, ScaleTypes.FIT));
+        slideModels.add(new SlideModel ( R.drawable.im5, ScaleTypes.FIT));
+        slideModels.add(new SlideModel ( R.drawable.im6, ScaleTypes.FIT));
+        slideModels.add(new SlideModel ( R.drawable.im7, ScaleTypes.FIT));
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 
         Toolbar toolbar= findViewById(R.id.toolBar);
@@ -75,6 +79,7 @@ public class MainPageActivity extends AppCompatActivity {
 
     }
 
+    // This method is used to create the menu options for the toolbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -82,16 +87,4 @@ public class MainPageActivity extends AppCompatActivity {
         return true;
     }
 
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id =item.getItemId();
-        if(id==R.id.user){
-            Intent intent = new Intent(MainPageActivity.this,Profile.class);
-            startActivity(intent);
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
