@@ -11,11 +11,13 @@ The **Virtual Fashion Assistant** app is a personalized fashion tool designed to
 
 ## Screenshots
 ### 1. Body Type & Skin Tone Quiz
-![Body Type & Skin Tone Quiz](body-type-skin-tone-quiz.png)
+![Body Type & Skin Tone Quiz](body-type-skin-tone-quiz1.png)
+![Body Type & Skin Tone Quiz](body-type-skin-tone-quiz2.png)
 - The quiz helps users determine their body type and skin tone, enabling personalized fashion advice.
 
 ### 2. Occasion-Based Outfit Collections
-![Occasion-Based Outfit Collections](occasion-based-outfit-collections.png)
+![Occasion-Based Outfit Collections](occasion-based-outfit-collections1.png)
+![Occasion-Based Outfit Collections](occasion-based-outfit-collections2.png)
 - The app provides curated outfit collections tailored to specific occasions, such as weddings or casual outings.
 
 ### 3. User Profile
